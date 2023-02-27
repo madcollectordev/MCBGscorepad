@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FragmentMain">
+
+    <fragment
+        android:id="@+id/FragmentMain"
+        android:name="fr.free.madcollector.mcbgscorepad.FragmentMain"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_main" >
+
+        <action
+            android:id="@+id/action_FragmentMain_to_FragmentTemplateList"
+            app:destination="@id/FragmentTemplateList" />
+        <action
+            android:id="@+id/action_FragmentMain_to_FragmenNewGameType"
+            app:destination="@id/FragmenNewGameType" />
+    </fragment>
+    <fragment
+        android:id="@+id/FragmentTemplateList"
+        android:name="fr.free.madcollector.mcbgscorepad.templates.FragmentTemplateList"
+        android:label="@string/manage_scorepads"
+        tools:layout="@layout/template_fragment_template_list" >
+
+        <action
+            android:id="@+id/action_FragmentTemplateList_to_FragmentMain"
+            app:destination="@id/FragmentMain"
+            app:popUpTo="@id/FragmentMain"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_FragmentTemplateList_to_FragmentTemplateEdit"
+            app:destination="@id/FragmentTemplateEdit" />
+    </fragment>
+    <fragment
+        android:id="@+id/FragmentTemplateEdit"
+        android:name="fr.free.madcollector.mcbgscorepad.templates.FragmentTemplateEdit"
+        android:label="@string/edit_template"
+        tools:layout="@layout/template_fragment_template_edit" >
+
+        <action
+            android:id="@+id/action_FragmentTemplateEdit_to_FragmentTemplateList"
+            app:destination="@id/FragmentTemplateList"
+            app:popUpTo="@id/FragmentTemplateList"/>
+        <action
+            android:id="@+id/action_FragmentTemplateEdit_to_FragmentScorelineEdit"
+            app:destination="@id/FragmentScorelineEdit" />
+    </fragment>
+    <fragment
+        android:id="@+id/FragmentScorelineEdit"
+        android:name="fr.free.madcollector.mcbgscorepad.templates.FragmentScorelineEdit"
+        android:label="@string/edit_scoreline"
+        tools:layout="@layout/template_fragment_scoreline_edit" >
+
+        <action
+            android:id="@+id/action_FragmentScorelineEdit_to_FragmentTemplateEdit"
+            app:destination="@id/FragmentTemplateEdit"
+            app:popUpTo="@id/FragmentTemplateEdit"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/FragmenNewGameType"
+        android:name="fr.free.madcollector.mcbgscorepad.newgame.FragmentNewGameType"
+        android:label="@string/select_game_type"
+        tools:layout="@layout/newgame_fragment_select_type" >
+
+        <action
+            android:id="@+id/action_FragmenNewGameType_to_FragmentMain"
+            app:destination="@id/FragmentMain"
+            app:popUpTo="@id/FragmentMain"/>
+        <action
+            android:id="@+id/action_FragmenNewGameType_to_FragmentNewGameTemplateList"
+            app:destination="@id/FragmentNewGameTemplateList"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/FragmentNewGameTemplateList"
+        android:name="fr.free.madcollector.mcbgscorepad.newgame.FragmentNewGameTemplateList"
+        android:label="@string/select_game_template"
+        tools:layout="@layout/newgame_fragment_template_list" >
+
+        <action
+            android:id="@+id/action_FragmentNewGameTemplateList_to_FragmenNewGameType"
+            app:destination="@id/FragmenNewGameType"
+            app:popUpTo="@id/FragmenNewGameType"/>
+    </fragment>
+</navigation>

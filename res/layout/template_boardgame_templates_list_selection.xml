@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/selectedBGTemplateItemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="0dip"
+    android:gravity="center|top"
+    android:paddingBottom="0dip"
+    android:paddingTop="0dip"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/checkBoxBGTemplate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dip"
+        android:paddingTop="8dip"
+        android:gravity="left|center_vertical"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/selectedBGTemplatedrawer_item1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start|center_vertical"
+        android:textSize="16dp"
+        android:paddingBottom="8dip"
+        android:paddingTop="8dip"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"/>
+</LinearLayout>

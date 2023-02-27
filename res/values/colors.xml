@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="myPrimaryDark">#960808</color>
+    <color name="myStatusbarDark">#FF2a293a</color>
+    <color name="myscondaryDark">#FFf84c00</color>
+    <color name="mycardsLight">#FFefe6ff</color>
+    <color name="mycardsDark">#FF616161</color>
+
+
+    <color name="deep_red">#e80000</color>
+    <color name="pinkish_red">#ff2538</color>
+    <color name="dark_orange">#ff3f00</color>
+    <color name="middle_orange">#ff8100</color>
+    <color name="light_orange">#ffbe00</color>
+    <color name="light_yellow">#f4f96f</color>
+    <color name="middle_blue">#00b7ea</color>
+    <color name="light_blue">#afedff</color>
+    <color name="light_green">#9ddca6</color>
+    <color name="middle_green">#00ba73</color>
+    <color name="lilac">#7785d0</color>
+    <color name="light_purple">#d96aea</color>
+    <color name="salmon">#f6756e</color>
+    <color name="light_pink">#fdc4c1</color>
+    <color name="gray">#bababa</color>
+    <color name="brown">#c4723f</color>
+
+    <array name="scorelinescolors">
+        <item>@color/deep_red</item>
+        <item>@color/pinkish_red</item>
+        <item>@color/dark_orange</item>
+        <item>@color/middle_orange</item>
+        <item>@color/light_orange</item>
+        <item>@color/light_yellow</item>
+        <item>@color/middle_blue</item>
+        <item>@color/light_blue</item>
+        <item>@color/light_green</item>
+        <item>@color/middle_green</item>
+        <item>@color/lilac</item>
+        <item>@color/light_purple</item>
+        <item>@color/salmon</item>
+        <item>@color/light_pink</item>
+        <item>@color/gray</item>
+        <item>@color/brown</item>
+    </array>
+</resources>

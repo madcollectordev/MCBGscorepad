@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scoresheet_nav_graph"
+    app:startDestination="@id/FragmentRoundGameMain">
+
+    <fragment
+        android:id="@+id/FragmentRoundGameMain"
+        android:name="fr.free.madcollector.mcbgscorepad.roundbasedgame.FragmentRoundGameMain"
+        android:label="@string/roundgame_newgame"
+        tools:layout="@layout/roundbased_fragment_main">
+        <action
+            android:id="@+id/action_FragmentRoundGameMain_to_FragmentManagePlayers"
+            app:destination="@id/FragmentManagePlayers" />
+
+        <action
+            android:id="@+id/action_FragmentRoundGameMain_to_FragmentFinalScore"
+            app:destination="@id/FragmentFinalScore" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/FragmentManagePlayers"
+        android:name="fr.free.madcollector.mcbgscorepad.game.FragmentManagePlayers"
+        android:label="@string/manage_players"
+        tools:layout="@layout/players_fragment_manage">
+    </fragment>
+
+    <fragment
+        android:id="@+id/FragmentFinalScore"
+        android:name="fr.free.madcollector.mcbgscorepad.game.FragmentFinalScore"
+        android:label="@string/final_scores"
+        tools:layout="@layout/score_fragment_finalscore">
+    </fragment>
+
+</navigation>

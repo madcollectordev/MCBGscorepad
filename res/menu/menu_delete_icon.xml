@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="fr.free.madcollector.mcbgscorepad.MainActivity" >
+    <item android:id="@+id/bin_toolbar"
+        android:title="@string/delete"
+        android:orderInCategory="1"
+        android:icon="@android:drawable/ic_menu_delete"
+        app:showAsAction="always" />
+    <item android:id="@+id/bin_export"
+        android:title="@string/export"
+        android:orderInCategory="1"
+        android:icon="@drawable/action_export"
+        app:showAsAction="always" />
+    <item android:id="@+id/bin_import"
+        android:title="@string/menuimport"
+        android:orderInCategory="1"
+        android:icon="@drawable/action_import"
+        app:showAsAction="always" />
+</menu>
